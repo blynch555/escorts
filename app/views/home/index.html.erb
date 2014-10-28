@@ -1,0 +1,22 @@
+<div id="listGrid">
+</div>
+ <ul id="escortList" class="list-inline">
+
+ <% @profiles.each do |p| %>
+ 	<div class="preview_div panel panel-default col-xs-3  col-xs-offset-1">
+		<li>
+			<%= image_tag(p.avatar.url(:medium)) %>
+			<%= link_to(options = {:controller => "profiles", :action => "show", :id => p.id }, html_options = {}) do %>
+			<div class="preview_caption">
+				<h2 class="nameTitle"><%= p.first_name.capitalize %></h2>
+				<p class="location"><%= p.location.upcase %></p>
+			</div>
+			<% end -%>
+		</li>
+	</div>
+ <% end -%>
+
+
+
+
+</div>

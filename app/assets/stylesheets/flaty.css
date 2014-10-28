@@ -1,0 +1,135 @@
+/* Flaty
+ * Bootswatch
+ *= require_self
+ *= require flaty/loader
+ *= require flaty/bootswatch
+*/
+.header{
+
+	height: 500px;
+	  /***  CSS Gradient  ***/
+  /*  Chrome 1-9 and Safari 4-5.0  */
+overflow: hidden;
+vertical-align: middle;
+	color: white; 
+}
+#logo{
+  position: absolute;
+  top: 75px;
+  left: 0;
+  margin-top: 50px;
+  text-align: center;
+}
+#logo img{
+  width: 400px;
+}
+
+div#header-top{
+  top: 0;
+}
+.video-canvas{
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+  overflow:  hidden !important;
+
+}
+
+div#bgvideo{
+    width: 100%;
+    top: -50%;
+    bottom: 0;
+    margin:auto 0;
+
+}
+
+
+.head-form{
+  position: absolute;
+  bottom: 0px;
+	background: rgba(0,0,0,.50);
+	height: 50px;
+	width: 100%;
+	text-align: center;
+}
+.masterfoot{
+
+	bottom: 0;
+}
+
+.preview_div{
+  height: 200px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  overflow: hidden;
+}
+
+.preview_div img{
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+.preview_caption{
+  width: 100%;
+  height: auto;
+  background-color: rgba(0,0,0,.7);
+  color: white;
+  position: absolute;
+  text-align: center;
+  top: 20%;
+}
+
+.masterfoot{
+  background: #ccc;
+  height: 100px;
+  width: 100%;
+}
+
+h1.welcome{
+  font-size: 20px;
+  color: #eee;
+} 
+
+#loginBox{
+  /*position: absolute;*/
+  position: fixed;
+  top: 30px;
+  background-color: white;
+
+  padding: 30px;
+/*  Border */
+border-radius: 0px 0px 33px 33px;
+-moz-border-radius: 0px 0px 33px 33px;
+-webkit-border-radius: 0px 0px 33px 33px;
+border: 0px solid #000000;
+
+/*Shadow*/
+
+  -webkit-box-shadow: 0px 0px 44px 10px rgba(0,0,0,0.71);
+-moz-box-shadow: 0px 0px 44px 10px rgba(0,0,0,0.71);
+box-shadow: 0px 0px 44px 10px rgba(0,0,0,0.71);
+
+}
+
+.master{
+  min-height: 600px;
+}
+
+footer{
+
+  width: 100%;
+  background-color: #000;
+  color: #D61EBB;
+}
+
+.nameTitle{
+  font-family: 'Shadows Into Light', cursive;
+}
+
+p.location{
+  font-size: 16px;
+  color:  #aaa;
+}

@@ -1,0 +1,13 @@
+#HTTPS server
+
+server {
+	listen 443;
+	server_name DOIT
+
+	root /usr/share/nginx/html/escorts;
+	index index.html index.html;
+
+	ssl on;
+	ssl_certificate /usr/share/nginx/ssl/server.crt;
+	ssl_certificate_key /usr/share/nginx/ssl/server.key;
+}

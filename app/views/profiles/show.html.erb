@@ -1,0 +1,38 @@
+<h3>Profiles - <%= "#{@profile.first_name} #{@profile.last_name}" %> </h3>
+<hr>
+<p class="text-muted">Some facts about myself</p>
+<div class="panel">
+<%= image_tag(@profile.avatar.url(:thumb), :class => "img") %>
+</div>
+<ul class="unstyled-list">
+		
+	<li>
+		Email: <%= @profile.user.email %>
+	</li>
+	<li>
+		Full Name: <%= @profile.first_name+" "+@profile.last_name %>
+	</li>
+
+	<li>
+		Birthday: <%= @profile.birthday %>
+	</li>
+	<li>
+		Location: <%= @profile.location %>
+	</li>
+	<li>
+		About me: <%= @profile.about_me %>
+	</li>
+</ul>
+
+<%= link_to "Delete Profile", :action => "destroy", 
+							  :class => "btn btn-danger", 
+							  :method => "delete", 
+							  :id => @profile.id %>
+
+<% if user_signed_in? %>
+<%= link_to "Edit Profile", :action => "edit", 
+							  :class => "btn btn-danger",  
+							  :id => @profile.id %>
+
+<% end %>
+
